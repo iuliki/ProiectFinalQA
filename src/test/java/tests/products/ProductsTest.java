@@ -8,6 +8,7 @@ import tests.dataProviders.DataProviders;
 
 public class ProductsTest extends BaseTest {
 
+
     @Test(description = "search Product", dataProvider = "products", dataProviderClass = DataProviders.class,
             groups = {"Products", "smoke"})
     public void searchProduct(String product) {
@@ -15,4 +16,6 @@ public class ProductsTest extends BaseTest {
                 .searchProduct(product);
         Assert.assertTrue(DriverManager.getDriver().getCurrentUrl().contains(product));
     }
+
+
 }

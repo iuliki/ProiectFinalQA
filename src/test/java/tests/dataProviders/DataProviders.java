@@ -7,7 +7,9 @@ public class DataProviders {
     @DataProvider(name = "products")
     public Object[][] products() {
         return new Object[][]{
-                {"samsung"}, {"iphone"}, {"motorola"}, {"huawei"}
+                {"servetele-nunta"}, {"servetele"}, {"servetele fective"}, {"seturi"}
         };
     }
+
+
 }

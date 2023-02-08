@@ -6,12 +6,48 @@
         <listener class-name="testng.AnnotationTransformer"/>
     </listeners>
 
-    <test name="Chrome1">
+
+    <test name="Cautare servetele in search">
         <parameter name="browser" value="chrome"/>
         <classes>
 <!--            <class name="tests.products.ProductsTest"/>-->
+            <class name="tests.products.ProductsTest"/>
+        </classes>
+    </test>
+
+
+    <test name="navigate to a napkin, add to card, see the card and increes the quantity">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!--            <class name="tests.products.ProductsTest"/>-->
             <class name="tests.orders.OrderTest"/>
         </classes>
     </test>
+
+    <test name="Cautare like candles">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!--            <class name="tests.products.ProductsTest"/>-->
+            <class name="tests.like.LikeCandle"/>
+        </classes>
+    </test>
+
+    <test name="Cautare login">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!--            <class name="tests.products.ProductsTest"/>-->
+            <class name="tests.login.Login"/>
+        </classes>
+    </test>
+
+
+        <test name="Scroll page">
+            <parameter name="browser" value="chrome"/>
+            <classes>
+                <!--            <class name="tests.products.ProductsTest"/>-->
+                <class name="tests.scroll.scrollPage"/>
+            </classes>
+        </test>
+
 
 </suite>
